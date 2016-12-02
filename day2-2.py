@@ -12,6 +12,6 @@ for instruction in instructions:
 	for i in range(0, len(instruction)):
 		if (instruction[i]=='L') & (layout[y][x-1]<>'0'): x-=1
 		elif (instruction[i]=='R') & (layout[y][x+1]<>'0'): x+=1
-		elif (instruction[i]=='D') & (layout[y+1][x]<>'0'):	y+=1
+		elif (instruction[i]=='D') & (layout[y+1][x]<>'0'): y+=1
 		elif (instruction[i]=='U') & (layout[y-1][x]<>'0'): y-=1
 	print layout[y][x]
